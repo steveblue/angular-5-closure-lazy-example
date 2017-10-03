@@ -132,119 +132,119 @@
 
 
     ```
---compilation_level=ADVANCED_OPTIMIZATIONS
---language_out=ES5
---variable_renaming_report=closure/variable_renaming_report
---property_renaming_report=closure/property_renaming_report
---create_source_map=%outname%.map
+    --compilation_level=ADVANCED_OPTIMIZATIONS
+    --language_out=ES5
+    --variable_renaming_report=closure/variable_renaming_report
+    --property_renaming_report=closure/property_renaming_report
+    --create_source_map=%outname%.map
 
---warning_level=QUIET
---dependency_mode=STRICT
---rewrite_polyfills=false
---module_resolution=node
+    --warning_level=QUIET
+    --dependency_mode=STRICT
+    --rewrite_polyfills=false
+    --module_resolution=node
 
-closure.externs.js
-node_modules/zone.js/dist/zone_externs.js
-node_modules/@angular/core/src/testability/testability.externs.js
+    closure.externs.js
+    node_modules/zone.js/dist/zone_externs.js
+    node_modules/@angular/core/src/testability/testability.externs.js
 
---process_common_js_modules
+    --process_common_js_modules
 
---js_module_root=node_modules/@angular/core
---js_module_root=node_modules/@angular/common
---js_module_root=node_modules/@angular/platform-browser
---js_module_root=node_modules/@angular/forms
---js_module_root=node_modules/@angular/http
---js_module_root=node_modules/@angular/router
---js_module_root=node_modules/@angular/animations
---js_module_root=node_modules/@angular/animations/browser
---js_module_root=node_modules/@angular/platform-browser/animations
+    --js_module_root=node_modules/@angular/core
+    --js_module_root=node_modules/@angular/common
+    --js_module_root=node_modules/@angular/platform-browser
+    --js_module_root=node_modules/@angular/forms
+    --js_module_root=node_modules/@angular/http
+    --js_module_root=node_modules/@angular/router
+    --js_module_root=node_modules/@angular/animations
+    --js_module_root=node_modules/@angular/animations/browser
+    --js_module_root=node_modules/@angular/platform-browser/animations
 
-node_modules/rxjs/util/root.js
-node_modules/rxjs/symbol/observable.js
-node_modules/rxjs/symbol/rxSubscriber.js
-node_modules/rxjs/util/isFunction.js
-node_modules/rxjs/Observer.js
-node_modules/rxjs/util/isObject.js
-node_modules/rxjs/util/UnsubscriptionError.js
-node_modules/rxjs/util/errorObject.js
-node_modules/rxjs/util/isArray.js
-node_modules/rxjs/util/tryCatch.js
-node_modules/rxjs/Subscription.js
-node_modules/rxjs/Subscriber.js
-node_modules/rxjs/util/toSubscriber.js
-node_modules/rxjs/Observable.js
-node_modules/rxjs/util/ObjectUnsubscribedError.js
-node_modules/rxjs/SubjectSubscription.js
-node_modules/rxjs/Subject.js
-node_modules/rxjs/BehaviorSubject.js
-node_modules/rxjs/InnerSubscriber.js
-node_modules/rxjs/Notification.js
-node_modules/rxjs/OuterSubscriber.js
-node_modules/rxjs/operator/observeOn.js
-node_modules/rxjs/util/isPromise.js
-node_modules/rxjs/util/isArrayLike.js
-node_modules/rxjs/symbol/iterator.js
-node_modules/rxjs/util/subscribeToResult.js
-node_modules/rxjs/util/EmptyError.js
-node_modules/rxjs/operator/first.js
-node_modules/rxjs/util/isScheduler.js
-node_modules/rxjs/observable/ScalarObservable.js
-node_modules/rxjs/observable/EmptyObservable.js
-node_modules/rxjs/observable/ArrayObservable.js
-node_modules/rxjs/observable/ForkJoinObservable.js
-node_modules/rxjs/observable/forkJoin.js
-node_modules/rxjs/operator/map.js
-node_modules/rxjs/operator/mergeAll.js
-node_modules/rxjs/operator/merge.js
-node_modules/rxjs/observable/ConnectableObservable.js
-node_modules/rxjs/operator/multicast.js
-node_modules/rxjs/operator/mergeMap.js
-node_modules/rxjs/observable/of.js
-node_modules/rxjs/observable/PromiseObservable.js
-node_modules/rxjs/observable/ArrayLikeObservable.js
-node_modules/rxjs/observable/IteratorObservable.js
-node_modules/rxjs/observable/FromObservable.js
-node_modules/rxjs/operator/every.js
-node_modules/rxjs/operator/share.js
-node_modules/rxjs/operator/concatMap.js
-node_modules/rxjs/operator/filter.js
-node_modules/rxjs/operator/catch.js
-node_modules/rxjs/operator/concatAll.js
-node_modules/rxjs/operator/reduce.js
-node_modules/rxjs/observable/fromPromise.js
-node_modules/rxjs/operator/last.js
-node_modules/rxjs/observable/from.js
-node_modules/rxjs/observable/merge.js
-node_modules/@angular/core/@angular/core.js
-node_modules/@angular/common/@angular/common.js
-node_modules/@angular/platform-browser/@angular/platform-browser.js
-node_modules/@angular/router/@angular/router.js
-node_modules/@angular/http/@angular/http.js
-node_modules/@angular/forms/@angular/forms.js
-node_modules/@angular/animations/@angular/animations.js
-node_modules/@angular/animations/@angular/animations/browser.js
-node_modules/@angular/platform-browser/@angular/platform-browser/animations.js
---module=vendor:68
+    node_modules/rxjs/util/root.js
+    node_modules/rxjs/symbol/observable.js
+    node_modules/rxjs/symbol/rxSubscriber.js
+    node_modules/rxjs/util/isFunction.js
+    node_modules/rxjs/Observer.js
+    node_modules/rxjs/util/isObject.js
+    node_modules/rxjs/util/UnsubscriptionError.js
+    node_modules/rxjs/util/errorObject.js
+    node_modules/rxjs/util/isArray.js
+    node_modules/rxjs/util/tryCatch.js
+    node_modules/rxjs/Subscription.js
+    node_modules/rxjs/Subscriber.js
+    node_modules/rxjs/util/toSubscriber.js
+    node_modules/rxjs/Observable.js
+    node_modules/rxjs/util/ObjectUnsubscribedError.js
+    node_modules/rxjs/SubjectSubscription.js
+    node_modules/rxjs/Subject.js
+    node_modules/rxjs/BehaviorSubject.js
+    node_modules/rxjs/InnerSubscriber.js
+    node_modules/rxjs/Notification.js
+    node_modules/rxjs/OuterSubscriber.js
+    node_modules/rxjs/operator/observeOn.js
+    node_modules/rxjs/util/isPromise.js
+    node_modules/rxjs/util/isArrayLike.js
+    node_modules/rxjs/symbol/iterator.js
+    node_modules/rxjs/util/subscribeToResult.js
+    node_modules/rxjs/util/EmptyError.js
+    node_modules/rxjs/operator/first.js
+    node_modules/rxjs/util/isScheduler.js
+    node_modules/rxjs/observable/ScalarObservable.js
+    node_modules/rxjs/observable/EmptyObservable.js
+    node_modules/rxjs/observable/ArrayObservable.js
+    node_modules/rxjs/observable/ForkJoinObservable.js
+    node_modules/rxjs/observable/forkJoin.js
+    node_modules/rxjs/operator/map.js
+    node_modules/rxjs/operator/mergeAll.js
+    node_modules/rxjs/operator/merge.js
+    node_modules/rxjs/observable/ConnectableObservable.js
+    node_modules/rxjs/operator/multicast.js
+    node_modules/rxjs/operator/mergeMap.js
+    node_modules/rxjs/observable/of.js
+    node_modules/rxjs/observable/PromiseObservable.js
+    node_modules/rxjs/observable/ArrayLikeObservable.js
+    node_modules/rxjs/observable/IteratorObservable.js
+    node_modules/rxjs/observable/FromObservable.js
+    node_modules/rxjs/operator/every.js
+    node_modules/rxjs/operator/share.js
+    node_modules/rxjs/operator/concatMap.js
+    node_modules/rxjs/operator/filter.js
+    node_modules/rxjs/operator/catch.js
+    node_modules/rxjs/operator/concatAll.js
+    node_modules/rxjs/operator/reduce.js
+    node_modules/rxjs/observable/fromPromise.js
+    node_modules/rxjs/operator/last.js
+    node_modules/rxjs/observable/from.js
+    node_modules/rxjs/observable/merge.js
+    node_modules/@angular/core/@angular/core.js
+    node_modules/@angular/common/@angular/common.js
+    node_modules/@angular/platform-browser/@angular/platform-browser.js
+    node_modules/@angular/router/@angular/router.js
+    node_modules/@angular/http/@angular/http.js
+    node_modules/@angular/forms/@angular/forms.js
+    node_modules/@angular/animations/@angular/animations.js
+    node_modules/@angular/animations/@angular/animations/browser.js
+    node_modules/@angular/platform-browser/@angular/platform-browser/animations.js
+    --module=vendor:68
 
-ngfactory/src/app/app.component.css.shim.ngstyle.js
-ngfactory/src/app/app.component.js
-ngfactory/src/app/app.component.ngfactory.js
-ngfactory/src/app/shared/components/home/home.component.js
-ngfactory/src/app/app.routes.js
-ngfactory/src/app/shared/components/home/home.module.js
-ngfactory/src/app/app.module.js
-ngfactory/src/app/shared/components/home/home.component.css.shim.ngstyle.js
-ngfactory/src/app/shared/components/home/home.component.ngfactory.js
-ngfactory/src/app/app.module.ngfactory.js
-main.prod.js
---module=bundle:11:vendor
+    ngfactory/src/app/app.component.css.shim.ngstyle.js
+    ngfactory/src/app/app.component.js
+    ngfactory/src/app/app.component.ngfactory.js
+    ngfactory/src/app/shared/components/home/home.component.js
+    ngfactory/src/app/app.routes.js
+    ngfactory/src/app/shared/components/home/home.module.js
+    ngfactory/src/app/app.module.js
+    ngfactory/src/app/shared/components/home/home.component.css.shim.ngstyle.js
+    ngfactory/src/app/shared/components/home/home.component.ngfactory.js
+    ngfactory/src/app/app.module.ngfactory.js
+    main.prod.js
+    --module=bundle:11:vendor
 
-ngfactory/src/app/shared/components/lazy/lazy.component.css.shim.ngstyle.js
-ngfactory/src/app/shared/components/lazy/lazy.component.js
-ngfactory/src/app/shared/components/lazy/lazy.component.ngfactory.js
-ngfactory/src/app/shared/components/lazy/lazy.routes.js
-ngfactory/src/app/shared/components/lazy/lazy.module.js
-ngfactory/src/app/shared/components/lazy/lazy.module.ngfactory.js
---module=lazy.module.bundle:6:bundle
+    ngfactory/src/app/shared/components/lazy/lazy.component.css.shim.ngstyle.js
+    ngfactory/src/app/shared/components/lazy/lazy.component.js
+    ngfactory/src/app/shared/components/lazy/lazy.component.ngfactory.js
+    ngfactory/src/app/shared/components/lazy/lazy.routes.js
+    ngfactory/src/app/shared/components/lazy/lazy.module.js
+    ngfactory/src/app/shared/components/lazy/lazy.module.ngfactory.js
+    --module=lazy.module.bundle:6:bundle
 
-```
+    ```
