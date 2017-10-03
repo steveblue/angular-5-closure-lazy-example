@@ -3,8 +3,8 @@ Reproduce an issue with lazyloading with closure compiler in angular 5.0.0-rc.0
 
 To reproduce:
 
-$`npm install`
-$`java -jar node_modules/google-closure-compiler/compiler.jar --flagfile ./tmp/closure.lazy.conf --entry_point=./main.prod --entry_point=././ngfactory/src/app/shared/components/lazy/lazy.module.ngfactory --output_manifest=closure/manifest.MF --module_output_path_prefix=build/ "--module_wrapper=lazy.module.bundle:(self._S=self._S||[]).push((function(){%s})); //# sourceMappingURL=%basename%.map"`
+- $`npm install`
+- $`java -jar node_modules/google-closure-compiler/compiler.jar --flagfile ./tmp/closure.lazy.conf --entry_point=./main.prod --entry_point=././ngfactory/src/app/shared/components/lazy/lazy.module.ngfactory --output_manifest=closure/manifest.MF --module_output_path_prefix=build/ "--module_wrapper=lazy.module.bundle:(self._S=self._S||[]).push((function(){%s})); //# sourceMappingURL=%basename%.map"`
 
 Results in error with lazyloaded bundle. The bundle file (build/lazy.module.ngfactory.js) has no content, just the sourcemap the script is appending to it:
 
@@ -13,9 +13,9 @@ Results in error with lazyloaded bundle. The bundle file (build/lazy.module.ngfa
 
     ```
 
-    Using this conf for lazyloading a single module:
+Using this conf for lazyloading a single module:
 
-    tmp/closure.lazy.conf
+tmp/closure.lazy.conf
 
     ```
     --compilation_level=ADVANCED_OPTIMIZATIONS
