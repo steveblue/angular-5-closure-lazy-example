@@ -1,0 +1,1 @@
+[{"__symbolic":"module","version":4,"metadata":{"routing":{"__symbolic":"call","expression":{"__symbolic":"select","expression":{"__symbolic":"reference","module":"@angular/router","name":"RouterModule"},"member":"forChild"},"arguments":[[{"path":"","component":{"__symbolic":"reference","module":"./lazy.component","name":"LazyComponent"}}]]}}}]
