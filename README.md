@@ -128,7 +128,7 @@ tmp/closure.lazy.conf
 --process_common_js_modules
 ```
 
-In @angular 4.x this works, but with 5.0.0-rc.0 `--js_module_root` can no longer be specified:
+In @angular 4.x this works, but with 5.0.0-rc.0 and the closure compiler fork `--js_module_root` can no longer be specified:
 
 
 ```
